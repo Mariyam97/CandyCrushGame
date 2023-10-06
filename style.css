@@ -1,0 +1,52 @@
+body {
+  background-image: url('bg1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.score-board {
+  background-color: #ff69b4; /* Pink background for the score board */
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 70px); /* 8 columns with 70px width each */
+  gap: 5px; /* Gap between candy squares */
+  background-color: transparent; /* Transparent background for the grid */
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+}
+
+.grid div {
+  height: 70px;
+  width: 70px;
+  background-color: #ffcc00; /* Candy square background color */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white; /* Text color for candy squares */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for candy squares */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.grid div:hover {
+  background-color: #ff9933; /* Lighter color on hover */
+}
+
